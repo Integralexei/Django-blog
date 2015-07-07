@@ -27,10 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# TEMPLATE_DIRS = (
-#     '/home/yesterday69/project-dj_tutor/firstapp/templates',
-# )
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -41,7 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'article',
-    'foundation'
+    'foundation',
+    'loginsys',
 
 )
 
@@ -62,7 +59,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['/home/yesterday69/project-dj_tutor/firstapp/templates',
-                 '/home/yesterday69/project-dj_tutor/firstapp/article/templates'],
+                 '/home/yesterday69/project-dj_tutor/firstapp/article/templates',
+                 '/home/yesterday69/project-dj_tutor/firstapp/loginsys/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
