@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.http.response import HttpResponse, Http404
 from django.template.context_processors import csrf
 from django.template.loader import get_template
@@ -45,8 +44,6 @@ def article(request, article_id=1):
     args['form'] = comment_form
     args['username'] = auth.get_user(request).username
     return render_to_response('article.html', args)
-    # return render_to_response('article.html', {'article': Article.objects.get(id=article_id),
-    #                                            'comments':  Comments.objects.filter(comments_article_id=article_id)})
 
 
 def addlike(request, article_id):

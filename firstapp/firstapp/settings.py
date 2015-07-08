@@ -106,8 +106,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
-
 STATICFILES_DIRS = (
     ('static', '/home/yesterday69/project-dj_tutor/dj_tutor/local/lib/python2.7/site-packages/foundation/static/foundation'),
 )
