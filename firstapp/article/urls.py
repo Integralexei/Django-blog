@@ -1,4 +1,4 @@
-from django.conf.urls import include, url, patterns
+from django.conf.urls import url, patterns
 
 urlpatterns = patterns('',
                        url(r'^1/', 'article.views.basic_one'),
@@ -10,3 +10,4 @@ urlpatterns = patterns('',
                        url(r'^articles/addcomment/(?P<article_id>\d+)/$', 'article.views.addcomment'),
                        url(r'^', 'article.views.articles'),
                        )
+
